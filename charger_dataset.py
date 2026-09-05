@@ -1,4 +1,5 @@
 import pandas as pd
+from nettoyage import nettoyer
 
 def charger_dataset(dataset):
     try:
