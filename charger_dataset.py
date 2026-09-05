@@ -1,6 +1,10 @@
 import pandas as pd
 
 def charger_dataset(dataset):
-    df = pd.read_csv(dataset)
-    return df
+    try:
+        df = pd.read_csv(dataset)
+        df = df.drop_duplicates().dropna()
+        return df
 
+    except: 
+        print("Echec lors du chargement")

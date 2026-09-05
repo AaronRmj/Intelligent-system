@@ -16,4 +16,4 @@ ECOUTER MUSIQUE,jouer_chanson
 LANCER PLAYLIST,jouer_chanson
 METTRE MUSIQUE,jouer_chanson
 JOUE PLAYLIST,jouer_chanson
-LANCE PLAYLIST, jouer_chanson
+LANCE PLAYLIST,jouer_chanson
