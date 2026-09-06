@@ -13,14 +13,23 @@ def nettoyer(texte):
         "ù": "u",
         "é": "e",
         "è": "e",
+        'ë': 'e',
         "ê": "e",
-        "ç": "c"
+        "ç": "c",
+        'î': 'i', 
+        'ï': 'i',
+        'â': 'a', 
+        'ä': 'a',
+        'û': 'u',
+        'ü': 'u',
+        'ô': 'o',
+        'ö': 'o',
 
     }
 
     #on retourne cle, valeur avec la clé qui sera remplacé par la valeur
-    for syllabe_accentuee, syllabe_normale in synonyme_syllabe.items():
-        texte = texte.replace(syllabe_accentuee, syllabe_normale)
+    for syllabe_accentues, syllabe_normale in synonyme_syllabe.items():
+        texte = texte.replace(syllabe_accentues, syllabe_normale)
 
     
     texte = texte.lower().strip()
