@@ -9,13 +9,13 @@ clean_dataset = dataset["intention_user"].apply(nettoyer)
 clean_input = nettoyer(input_user)
 
 # set elimination doublon
-vocabulaire = set()
+vocabulaire = []
 for ligne in clean_dataset:
     ligne = ligne.split()
     for mot in ligne:
-        vocabulaire.add(mot)
+        vocabulaire.append(mot)
 
-vocabulaire_globale = list(vocabulaire)
+vocabulaire_globale = sorted(list(set(vocabulaire)))
 print(vocabulaire_globale)
 # vectoriser le dataset et l input user en 0 et 1, absent ou present
 
