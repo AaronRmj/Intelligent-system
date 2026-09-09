@@ -64,5 +64,6 @@ distances = distance_euclidienne(vecteur_user, matrice_dataset)
 
 #recherche le min
 index_min = np.argmin(distances)
+print(f"phrase plus proche de l'intention user: {index_min}")
 score = distances[index_min]
-print(score)
+print(f"score: {score}") 
