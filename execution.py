@@ -2,6 +2,7 @@ import numpy as np
 import webbrowser
 from classifier import dataset, index_min, score, clean_input
 import urllib.parse
+from shazam import main
 
 
 seuil = 1.4
@@ -32,8 +33,9 @@ def execution(commande, phrase_user):
 
             print("Playlist en cours de lecture")
 
-        elif commande == "deviner_chanson":
-            print("Je suis en train de chercher le titre de votre chanson")    
+        elif commande == "identifier_chanson":
+            print("Analyse en cours...")
+            main()
 
     else: 
         print("Je ne comprends pas votre commande, ressayer svp!")

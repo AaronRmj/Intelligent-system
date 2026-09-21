@@ -29,10 +29,16 @@ def record_microphone():
 
 #identification du son avec appel API shazam 
 async def identify_song():
+
+    #appel api shazam
     shazam = Shazam()
+
+
+    #prendre le fichier 
     result = await shazam.recognize(TEMP_FILENAME)
     track = result.get('track')
 
+    #si existe, on prend titre et artiste
     if track:
         title = track.get('title', 'titre inconnue')
         artist = track.get('subtitle','Artiste inconnu')
@@ -50,7 +56,3 @@ def main():
         print(f"Artiste: {artiste}")
     else: 
         print("impossible d'identifier la musique")
-
-
-if __name__ == "__main__":
-    main()
