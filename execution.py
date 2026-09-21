@@ -32,6 +32,9 @@ def execution(commande, phrase_user):
 
             print("Playlist en cours de lecture")
 
+        elif commande == "deviner_chanson":
+            print("Je suis en train de chercher le titre de votre chanson")    
+
     else: 
         print("Je ne comprends pas votre commande, ressayer svp!")
 

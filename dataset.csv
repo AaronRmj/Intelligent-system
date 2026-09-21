@@ -19,3 +19,12 @@ METTRE MUSIQUE,jouer_chanson
 JOUE PLAYLIST,jouer_chanson
 LANCE PLAYLIST,jouer_chanson
 JOUER CHANSON,jouer_chanson
+JOUE CHANSON,jouer_chanson
+QUEL TITRE,deviner_chanson
+TITRE CHANSON, deviner_chanson
+TITRE MORCEAU, deviner_chanson
+CHANTER CHANSON, deviner_chanson
+CHANTE CHANSON, deviner_chanson
+ECRIT CHANSON, deviner_chanson
+TITRE MUSIQUE, deviner_chanson
+TITRE PLAYLIST, deviner_chanson

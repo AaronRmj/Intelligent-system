@@ -3,6 +3,11 @@ from nettoyage import nettoyer
 import numpy as np
 import math
 
+
+
+
+
+
 dataset = charger_dataset("dataset.csv")
 input_user = input("Que voulez vous faire?\n")
 
